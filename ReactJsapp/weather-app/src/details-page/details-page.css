@@ -1,0 +1,20 @@
+.details-header {
+  display: flex;
+}
+
+.content-divider {
+  width: 600px;
+  height: 1px;
+  background-color: darkgray;
+}
+
+.extra-item {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.spacer {
+  width: 50px;
+}

@@ -1,0 +1,10 @@
+.item-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.item-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
