@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1437C5E629798A7F00914F5F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437C5E529798A7F00914F5F /* ListViewModel.swift */; };
+		1437C5E929799F9E00914F5F /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437C5E829799F9E00914F5F /* WeatherRepository.swift */; };
+		144C56DE297ABE2C00F5B682 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C56DD297ABE2C00F5B682 /* ServiceConfig.swift */; };
+		14BCC5A6297822D000F3895F /* ScrumringerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5A5297822D000F3895F /* ScrumringerApp.swift */; };
+		14BCC5A8297822D000F3895F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5A7297822D000F3895F /* ContentView.swift */; };
+		14BCC5AA297822D400F3895F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BCC5A9297822D400F3895F /* Assets.xcassets */; };
+		14BCC5AE297822D400F3895F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BCC5AD297822D400F3895F /* Preview Assets.xcassets */; };
+		14BCC5B8297822D400F3895F /* ScrumringerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5B7297822D400F3895F /* ScrumringerTests.swift */; };
+		14BCC5C2297822D400F3895F /* ScrumringerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5C1297822D400F3895F /* ScrumringerUITests.swift */; };
+		14BCC5C4297822D400F3895F /* ScrumringerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5C3297822D400F3895F /* ScrumringerUITestsLaunchTests.swift */; };
+		14BCC5D32978353F00F3895F /* LocationWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5D22978353F00F3895F /* LocationWeather.swift */; };
+		14BCC5D529784A6200F3895F /* WeatherListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5D429784A6200F3895F /* WeatherListView.swift */; };
+		14BCC5D729784E2A00F3895F /* WeatherCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5D629784E2A00F3895F /* WeatherCardView.swift */; };
+		14BCC5DC2979583A00F3895F /* WeatherDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BCC5DB2979583A00F3895F /* WeatherDetailsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14BCC5B4297822D400F3895F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14BCC59A297822D000F3895F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BCC5A1297822D000F3895F;
+			remoteInfo = Scrumringer;
+		};
+		14BCC5BE297822D400F3895F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14BCC59A297822D000F3895F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BCC5A1297822D000F3895F;
+			remoteInfo = Scrumringer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1437C5E529798A7F00914F5F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1437C5E829799F9E00914F5F /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		144C56DD297ABE2C00F5B682 /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		14BCC5A2297822D000F3895F /* Scrumringer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumringer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BCC5A5297822D000F3895F /* ScrumringerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumringerApp.swift; sourceTree = "<group>"; };
+		14BCC5A7297822D000F3895F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14BCC5A9297822D400F3895F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14BCC5AB297822D400F3895F /* Scrumringer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrumringer.entitlements; sourceTree = "<group>"; };
+		14BCC5AD297822D400F3895F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14BCC5B3297822D400F3895F /* ScrumringerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumringerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BCC5B7297822D400F3895F /* ScrumringerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumringerTests.swift; sourceTree = "<group>"; };
+		14BCC5BD297822D400F3895F /* ScrumringerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumringerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BCC5C1297822D400F3895F /* ScrumringerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumringerUITests.swift; sourceTree = "<group>"; };
+		14BCC5C3297822D400F3895F /* ScrumringerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumringerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14BCC5D22978353F00F3895F /* LocationWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWeather.swift; sourceTree = "<group>"; };
+		14BCC5D429784A6200F3895F /* WeatherListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListView.swift; sourceTree = "<group>"; };
+		14BCC5D629784E2A00F3895F /* WeatherCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardView.swift; sourceTree = "<group>"; };
+		14BCC5DB2979583A00F3895F /* WeatherDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14BCC59F297822D000F3895F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5B0297822D400F3895F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5BA297822D400F3895F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1437C5E729799F4B00914F5F /* WeatherRespository */ = {
+			isa = PBXGroup;
+			children = (
+				1437C5E829799F9E00914F5F /* WeatherRepository.swift */,
+			);
+			path = WeatherRespository;
+			sourceTree = "<group>";
+		};
+		14BCC599297822D000F3895F = {
+			isa = PBXGroup;
+			children = (
+				14BCC5A4297822D000F3895F /* Scrumringer */,
+				14BCC5B6297822D400F3895F /* ScrumringerTests */,
+				14BCC5C0297822D400F3895F /* ScrumringerUITests */,
+				14BCC5A3297822D000F3895F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14BCC5A3297822D000F3895F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5A2297822D000F3895F /* Scrumringer.app */,
+				14BCC5B3297822D400F3895F /* ScrumringerTests.xctest */,
+				14BCC5BD297822D400F3895F /* ScrumringerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14BCC5A4297822D000F3895F /* Scrumringer */ = {
+			isa = PBXGroup;
+			children = (
+				1437C5E729799F4B00914F5F /* WeatherRespository */,
+				14BCC5D8297886DB00F3895F /* WeatherDetails */,
+				14BCC5D12978347E00F3895F /* Models */,
+				14BCC5D02978342700F3895F /* WeatherList */,
+				14BCC5A5297822D000F3895F /* ScrumringerApp.swift */,
+				14BCC5A7297822D000F3895F /* ContentView.swift */,
+				14BCC5A9297822D400F3895F /* Assets.xcassets */,
+				14BCC5AB297822D400F3895F /* Scrumringer.entitlements */,
+				14BCC5AC297822D400F3895F /* Preview Content */,
+			);
+			path = Scrumringer;
+			sourceTree = "<group>";
+		};
+		14BCC5AC297822D400F3895F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5AD297822D400F3895F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14BCC5B6297822D400F3895F /* ScrumringerTests */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5B7297822D400F3895F /* ScrumringerTests.swift */,
+			);
+			path = ScrumringerTests;
+			sourceTree = "<group>";
+		};
+		14BCC5C0297822D400F3895F /* ScrumringerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5C1297822D400F3895F /* ScrumringerUITests.swift */,
+				14BCC5C3297822D400F3895F /* ScrumringerUITestsLaunchTests.swift */,
+			);
+			path = ScrumringerUITests;
+			sourceTree = "<group>";
+		};
+		14BCC5D02978342700F3895F /* WeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5D429784A6200F3895F /* WeatherListView.swift */,
+				14BCC5D629784E2A00F3895F /* WeatherCardView.swift */,
+				1437C5E529798A7F00914F5F /* ListViewModel.swift */,
+			);
+			path = WeatherList;
+			sourceTree = "<group>";
+		};
+		14BCC5D12978347E00F3895F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5D22978353F00F3895F /* LocationWeather.swift */,
+				144C56DD297ABE2C00F5B682 /* ServiceConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14BCC5D8297886DB00F3895F /* WeatherDetails */ = {
+			isa = PBXGroup;
+			children = (
+				14BCC5DB2979583A00F3895F /* WeatherDetailsView.swift */,
+			);
+			path = WeatherDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14BCC5A1297822D000F3895F /* Scrumringer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BCC5C7297822D400F3895F /* Build configuration list for PBXNativeTarget "Scrumringer" */;
+			buildPhases = (
+				14BCC59E297822D000F3895F /* Sources */,
+				14BCC59F297822D000F3895F /* Frameworks */,
+				14BCC5A0297822D000F3895F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scrumringer;
+			productName = Scrumringer;
+			productReference = 14BCC5A2297822D000F3895F /* Scrumringer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14BCC5B2297822D400F3895F /* ScrumringerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BCC5CA297822D400F3895F /* Build configuration list for PBXNativeTarget "ScrumringerTests" */;
+			buildPhases = (
+				14BCC5AF297822D400F3895F /* Sources */,
+				14BCC5B0297822D400F3895F /* Frameworks */,
+				14BCC5B1297822D400F3895F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14BCC5B5297822D400F3895F /* PBXTargetDependency */,
+			);
+			name = ScrumringerTests;
+			productName = ScrumringerTests;
+			productReference = 14BCC5B3297822D400F3895F /* ScrumringerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14BCC5BC297822D400F3895F /* ScrumringerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BCC5CD297822D400F3895F /* Build configuration list for PBXNativeTarget "ScrumringerUITests" */;
+			buildPhases = (
+				14BCC5B9297822D400F3895F /* Sources */,
+				14BCC5BA297822D400F3895F /* Frameworks */,
+				14BCC5BB297822D400F3895F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14BCC5BF297822D400F3895F /* PBXTargetDependency */,
+			);
+			name = ScrumringerUITests;
+			productName = ScrumringerUITests;
+			productReference = 14BCC5BD297822D400F3895F /* ScrumringerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14BCC59A297822D000F3895F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					14BCC5A1297822D000F3895F = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					14BCC5B2297822D400F3895F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 14BCC5A1297822D000F3895F;
+					};
+					14BCC5BC297822D400F3895F = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 14BCC5A1297822D000F3895F;
+					};
+				};
+			};
+			buildConfigurationList = 14BCC59D297822D000F3895F /* Build configuration list for PBXProject "Scrumringer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14BCC599297822D000F3895F;
+			productRefGroup = 14BCC5A3297822D000F3895F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14BCC5A1297822D000F3895F /* Scrumringer */,
+				14BCC5B2297822D400F3895F /* ScrumringerTests */,
+				14BCC5BC297822D400F3895F /* ScrumringerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14BCC5A0297822D000F3895F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCC5AE297822D400F3895F /* Preview Assets.xcassets in Resources */,
+				14BCC5AA297822D400F3895F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5B1297822D400F3895F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5BB297822D400F3895F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BCC59E297822D000F3895F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCC5D32978353F00F3895F /* LocationWeather.swift in Sources */,
+				144C56DE297ABE2C00F5B682 /* ServiceConfig.swift in Sources */,
+				14BCC5D729784E2A00F3895F /* WeatherCardView.swift in Sources */,
+				1437C5E929799F9E00914F5F /* WeatherRepository.swift in Sources */,
+				1437C5E629798A7F00914F5F /* ListViewModel.swift in Sources */,
+				14BCC5DC2979583A00F3895F /* WeatherDetailsView.swift in Sources */,
+				14BCC5A8297822D000F3895F /* ContentView.swift in Sources */,
+				14BCC5A6297822D000F3895F /* ScrumringerApp.swift in Sources */,
+				14BCC5D529784A6200F3895F /* WeatherListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5AF297822D400F3895F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCC5B8297822D400F3895F /* ScrumringerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BCC5B9297822D400F3895F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BCC5C4297822D400F3895F /* ScrumringerUITestsLaunchTests.swift in Sources */,
+				14BCC5C2297822D400F3895F /* ScrumringerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14BCC5B5297822D400F3895F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14BCC5A1297822D000F3895F /* Scrumringer */;
+			targetProxy = 14BCC5B4297822D400F3895F /* PBXContainerItemProxy */;
+		};
+		14BCC5BF297822D400F3895F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14BCC5A1297822D000F3895F /* Scrumringer */;
+			targetProxy = 14BCC5BE297822D400F3895F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14BCC5C5297822D400F3895F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14BCC5C6297822D400F3895F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		14BCC5C8297822D400F3895F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scrumringer/Scrumringer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumringer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.Scrumringer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14BCC5C9297822D400F3895F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Scrumringer/Scrumringer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scrumringer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.Scrumringer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14BCC5CB297822D400F3895F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.ScrumringerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumringer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumringer";
+			};
+			name = Debug;
+		};
+		14BCC5CC297822D400F3895F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.ScrumringerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scrumringer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Scrumringer";
+			};
+			name = Release;
+		};
+		14BCC5CE297822D400F3895F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.ScrumringerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Scrumringer;
+			};
+			name = Debug;
+		};
+		14BCC5CF297822D400F3895F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edu.practice.ScrumringerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Scrumringer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14BCC59D297822D000F3895F /* Build configuration list for PBXProject "Scrumringer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCC5C5297822D400F3895F /* Debug */,
+				14BCC5C6297822D400F3895F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BCC5C7297822D400F3895F /* Build configuration list for PBXNativeTarget "Scrumringer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCC5C8297822D400F3895F /* Debug */,
+				14BCC5C9297822D400F3895F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BCC5CA297822D400F3895F /* Build configuration list for PBXNativeTarget "ScrumringerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCC5CB297822D400F3895F /* Debug */,
+				14BCC5CC297822D400F3895F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BCC5CD297822D400F3895F /* Build configuration list for PBXNativeTarget "ScrumringerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BCC5CE297822D400F3895F /* Debug */,
+				14BCC5CF297822D400F3895F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14BCC59A297822D000F3895F /* Project object */;
+}
