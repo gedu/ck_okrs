@@ -76,3 +76,17 @@ nx run-android app-name-rn
 ```
 nx run-ios app-name-rn
 ```
+
+## Troubleshoot
+
+*error: package com.lugg.ReactNativeConfig does not exist import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;*
+
+I solved it by changing in MainApplication.java code imports:
+```
+
+import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
+
+to
+
+import com.lugg.RNCConfig.RNCConfigPackage;
+```
